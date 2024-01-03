@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Light Theme -->
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimaryLight</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkLight</item>
+        <item name="colorAccent">@color/colorAccentLight</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryTextLight</item>
+        <item name="android:windowBackground">@color/colorLightBackround</item>
+        <item name="android:divider">@color/colorDividerLight</item>
+
+        <!-- Add other light theme styles as needed -->
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccentDark</item>
+        <item name="android:textColorPrimary">@color/colorPrimaryTextDark</item>
+        <item name="android:windowBackground">@color/colorDarkBackround</item>
+        <item name="android:divider">@color/colorDividerDark</item>
+
+        <!-- Add other dark theme styles as needed -->
+    </style>
+
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- ... (previous styles) ... -->
+
+        <!-- TextView Style -->
+        <item name="android:textViewStyle">@style/AppTheme.TextView</item>
+
+        <!-- Spinner Style -->
+        <item name="android:spinnerStyle">@style/AppTheme.Spinner</item>
+
+        <!-- ListView Style -->
+        <item name="android:listViewStyle">@style/AppTheme.ListView</item>
+    </style>
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/colorPrimaryDark</item>
+    </style>
+    <!-- TextView Style -->
+    <style name="AppTheme.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/colorPrimaryTextLight</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Spinner Style -->
+    <style name="AppTheme.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@color/colorAccentLight</item>
+        <item name="android:popupBackground">@color/colorPrimaryLight</item>
+        <item name="android:dropDownSelector">@color/colorAccentLight</item>
+    </style>
+
+    <!-- ListView Style -->
+    <style name="AppTheme.ListView" parent="Widget.AppCompat.ListView">
+        <item name="android:divider">@color/black</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <style name="Theme.Agenda.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Agenda.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Agenda.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name ="android:textColor">@color/colorAccentLight</item>
+        <item name ="android:textAlignment">center</item>
+        <item name ="android:textStyle">bold</item>
+    </style>
+
+
+
+</resources>
